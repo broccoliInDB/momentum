@@ -1,0 +1,39 @@
+@import "common.css";
+@import "greet.css";
+@import "todoList.css";
+
+.header {
+  width: 100vw;
+  text-align: right;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body img {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: fadeIn 1s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

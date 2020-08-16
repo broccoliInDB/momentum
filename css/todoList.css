@@ -1,0 +1,54 @@
+.todoFormJs {
+  margin-top: 2rem;
+}
+
+.todos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todos li {
+  width: 45%;
+}
+
+.todos ul {
+  height: 15vh;
+  overflow-y: auto;
+}
+
+.pending {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.pending li,
+.finished li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.pending:empty::after {
+  content: "NOTHING TO DO!!";
+  color: #2ecc71;
+}
+
+.finished:empty::after {
+  content: "NOTHING HAS BEEN DONE!!";
+  color: #e74c3c;
+}
+
+.todo input,
+.todo button {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+}
+
+.todo button {
+  margin-left: 1rem;
+}

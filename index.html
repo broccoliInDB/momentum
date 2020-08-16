@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <title>Broccoli's Momentum</title>
+</head>
+
+<body>
+  <header class="header">
+    <span class="weather">
+    </span>
+  </header>
+  <main class="main">
+    <div class="clock">
+      <h1></h1>
+    </div>
+    <form class="greetFormJS">
+      <h2></h2>
+      <div class="edit">
+        <i class="fas fa-ellipsis-h"></i>
+        <div class="edit__popoverEdge"></div>
+        <div class="edit__popover">
+          <span>
+            Edit User
+          </span>
+        </div>
+      </div>
+      <input class="greet" type="text" placeholder="Enter Your name">
+    </form>
+    <form class="todoFormJs">
+      <input type="text" class="todoInputJs" placeholder="Enter Your Plans" />
+      <ul class="todos">
+        <li class="todo">
+          <h3>Pending</h3>
+          <ul class="pending"></ul>
+        </li>
+        <li class="todo">
+          <h3>Finished</h3>
+          <ul class="finished"></ul>
+        </li>
+      </ul>
+    </form>
+  </main>
+  <script src="js/index.js"></script>
+  <script src="js/greetform.js"></script>
+  <script src="js/todolist.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>
